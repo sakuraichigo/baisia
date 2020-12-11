@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    background-color: #FEFFF0;
+}
+
+div{
+    text-align:center;
+}
+
+.beisia{
+    width:80%;
+}
+
+.thanks{
+    font-size:40px;
+    color:black;
+    margin-top:150px;
+}
+
+button{
+    font-size:18px;
+    margin-top:50px;
+    width:150px;
+    height:50px;
+}
+

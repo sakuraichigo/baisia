@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'app/css/homestyle.css' %}">
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div>
+        <img class="beisia" src="{% static "app/images/beisia_title.png" %}" >
+        <img class="car" src="{% static "app/images/car.png" %}" >
+    </div>
+    <input type="button" onclick="location.href='/mycalendar'" value="START" class="buttonL">
+    <input type="button" onclick="location.href='/memo/lists'" value="確認" class="buttonR"></a>
+
+</body>
+</html>

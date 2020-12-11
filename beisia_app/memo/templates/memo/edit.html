@@ -1,0 +1,21 @@
+{% extends 'memo/base.html' %}
+
+{% block content %}
+<div class="ui grid stackable">
+    <div class="eleven wide column">
+        <div class="ui breadcrumb">
+            <a class="active section"></a>
+        </div>
+        <div class="ui segment">
+            <div class="content">
+                <div class="header"><h3>買い物リスト変更</h3></div>
+                <form class="" action="{% url 'memo:edit' id %}" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="buttonR" value="click">更新</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

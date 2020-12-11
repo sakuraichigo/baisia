@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    background-color: #FEFFF0 ;
+}
+
+h1 {
+    color:#FFC000;
+    font-size: 80px;
+    position:absolute;
+    left:250px;
+}
+
+div{
+    text-align:center;
+}
+
+.beisia{
+    width:80%;
+}
+
+.car{
+    position:relative;
+    top:200px;
+    left:480px;
+    width:20%;
+}
+
+.buttonL {
+    font-size:18pt;
+    margin-right:120px; 
+    margin-top:100px;
+    width:180px;
+    height:80px;
+}
+.buttonR {
+    font-size:18pt;
+    margin-left:120px;
+    margin-top:100px;
+    width:180px;
+    height:80px;
+}

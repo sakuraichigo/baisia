@@ -1,0 +1,22 @@
+{% load static %}
+<!doctype html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'memo/css/memostyle.css' %}">
+    <meta charset="utf-8">
+    <title>お買い物内容確認画面</title>
+</head>
+<body>
+    <h1 class="check">予約確認</h1>
+    <table class="okaimono">
+        <tr><td>日付</td><td class="value">{{form.date.value}}</td></tr>
+        <tr><td>お名前</td><td class="value">{{form.name.value}}</td></tr>
+        <tr><td>学籍番号</td><td class="value">{{form.number.value}}</td></tr>
+        <tr><td>電話番号</td><td class="value">{{form.phone.value}}</td></tr>        
+        <tr><td>買い物リスト</td><td class="value" ><pre>{{form.lists.value}}</pre></td></tr>
+    </table>
+    <a href="{% url 'memo:lists' %}"><button type="submit" class="buttonL">戻る</button></a>
+    <a href="{% url 'memo:edit' id %}"><button type="submit" class="buttonR">変更</button></a>
+
+</body>
+</html>
